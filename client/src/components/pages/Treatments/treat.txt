@@ -1,0 +1,284 @@
+import React from 'react'
+
+export default function Treatment() {
+  return (
+    <div>
+       <div className="container-fluid bg-breadcrumb">
+    <div className="container text-center py-5" style={{maxWidth: 900}}>
+      <h3 className="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Treatments</h3>
+      <ol className="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+        <li className="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li className="breadcrumb-item"><a href="#">Pages</a></li>
+        <li className="breadcrumb-item active text-primary">Our Treatments</li>
+      </ol>    
+    </div>
+  </div>
+        <div className="container-fluid feature py-5">
+    <div className="container py-5">
+      <div className="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div className="sub-style">
+          <h4 className="sub-title px-3 mb-0">Why Choose Us</h4>
+        </div>
+        <h1 className="display-3 mb-4">
+"Transformative Therapies at Shafi Ayurveda and Acupuncture Hospital"</h1>
+        <p className="mb-0">
+"Discover a realm of rejuvenation and healing at Shafi Ayurveda and Acupuncture Hospital. With a blend of ancient wisdom and modern techniques, our treatments offer holistic wellness for mind, body, and spirit."</p>
+      </div>
+      <div className="row g-4 justify-content-center">
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+          <div className="row-cols-1 feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                <img src='assets/img/icons/foot.png'/>
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">Foot Massage</h5>
+                <p className="mb-0">For a soothing experience, elevate your senses with a foot massage. Relieve tension and promote relaxation as you indulge in this rejuvenating treat for your feet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+          <div className="row-cols-1 feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                  {/* <i className="fas fa-briefcase-medical fa-4x text-primary" /> */}
+                  <img src='assets/img/icons/spina;.png'/>
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">SPINAL CORD ALLIGNMENT THERAPHY</h5>
+                <p className="mb-0">
+Restore balance and vitality with spinal cord alignment therapy. Experience renewed alignment and relief from discomfort through targeted therapeutic techniques.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+          <div className="row-cols-1 feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                  {/* <i className="fas fa-hospital-user fa-4x text-primary" /> */}
+                  <img src='assets/img/icons/hair.png'/>
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">HAIR CARE TREATMENT</h5>
+                <p className="mb-0">
+Revitalize your locks with expert hair care treatment. Indulge in a rejuvenating experience to nourish and strengthen your hair for a healthy, vibrant look.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+          <div className="row-cols- feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                  {/* <i className="fas fa-users fa-4x text-primary" /> */}
+                  <img src='assets/img/icons/steam.png'/>
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">STEAM THERAPY BATH</h5>
+                <p className="mb-0">Rejuvenate your body and mind with soothing steam therapy baths. Experience deep relaxation as the warm steam envelops you, melting away tension and leaving you refreshed and revitalized.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+          <div className="row-cols-1 feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                  {/* <i className="fas fa-spa fa-4x text-primary" /> */}
+                  <img src='assets/img/icons/mud.png'/>
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">MUD THERAPY BATH</h5>
+                <p className="mb-0">Indulge in the healing power of mud therapy baths, a natural remedy for restoring balance and detoxifying the body. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+          <div className="row-cols-1 feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                  {/* <i className="fab fa-pied-piper fa-4x text-primary" /> */}
+                  <img src='assets/img/icons/hijhama.png'/>
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">HIJAMA CUPPING THERAPY</h5>
+                <p className="mb-0">Rejuvenate your body with Hijama cupping therapy, fostering deep relaxation and toxin elimination.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+          <div className="row-cols-1 feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                  {/* <i className="fas fa-user-md fa-4x text-primary" /> */}
+                  <img src='assets/img/icons/hydro.png'/>
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">HYDRO DETOX THERAPY</h5>
+                <p className="mb-0">
+Revitalize your body with Hydro Detox Therapy, a cleansing journey that flushes toxins and restores vitality</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+          <div className="row-cols-1 feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                  {/* <i className="fas fa-user-md fa-4x text-primary" />
+                   */}
+                   <img src='assets/img/icons/fulllbody.png'/>
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">FULL BODY MESSAGE</h5>
+                <p className="mb-0">Indulge in a Full Body Massage to melt away tension and stress, promoting relaxation and wellness from head to toe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+          <div className="row-cols-1 feature-item p-4">
+            <div className="col-12">
+              <div className="feature-icon mb-4">
+                <div className="p-3 d-inline-flex bg-white rounded">
+                  {/* <i className="fas fa-user-md fa-4x text-primary" /> */}
+                  <img src='assets/img/icons/bath.png'/>
+         
+                </div>
+              </div>
+              <div className="feature-content d-flex flex-column">
+                <h5 className="mb-4">PLANTAIN LEAF BATH</h5>
+                <p className="mb-0">Immerse yourself in the soothing Plantain Leaf Bath, known for its natural healing properties. Let the gentle essence of plantain leaves envelop you, calming the mind and nourishing the skin for a truly refreshing experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+          <a href="#" className="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  )
+}
+
+  
+  h1 {
+    color: #fff;
+  }
+  
+  .lead {
+    color: #aaa;
+  }
+  
+  .wrapper {
+    margin: 10vh;
+  }
+  
+  /* Card styles */
+  .card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-has-bg {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .card-has-bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  
+  .card-has-bg:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+    background-size: 130%;
+  }
+  
+  .card-has-bg:hover .card-img-overlay {
+    background: #4D0366;
+    background: linear-gradient(0deg, hsla(300, 35%, 68%, 0.5) 0%, #fcfcfc 100%);
+    
+  }
+  
+  .card-footer {
+    background: none;
+    border-top: none;
+  }
+  
+  .card-footer .media img {
+    border: solid 3px rgba(255, 255, 255, 0.3);
+  }
+  
+  .card-title {
+    font-weight: 800;
+    color: white;
+  }
+  
+  .card-meta {
+    color: rgba(225, 39, 39, 0.3);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  .card-body {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    color: white;
+  }
+  
+  .card:hover .card-body {
+    margin-top: 30px;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+  }
+  
+  .card-img-overlay {
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    background: rgb(192, 244, 188);
+    color: white;
+    background: linear-gradient(0deg, rgba(135, 234, 187, 0.379) 0%, rgb(158, 231, 165) 100%);
+  }
+  

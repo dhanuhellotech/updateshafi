@@ -1,0 +1,79 @@
+.popup {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Change background color to white */
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  /* background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(255, 253, 253, 1) 0%, rgb(186, 131, 215) 87%); */
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.popup-contents {
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.popup-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+.close-icon:hover {
+  color: #000;
+}
+
+/* Input field style */
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content input[type="tel"],
+.popup-content select {
+  background-color: #a879c2; /* Change input field background color */
+  color: white; /* Change input field text color */
+  border: 2px solid #c8a3dc; /* Change input field border color */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Adjust styles for invalid feedback */
+.popup-content input.is-invalid,
+.popup-content select.is-invalid {
+  border-color: red; /* Change border color for invalid input */
+}
+
+.popup-content .invalid-feedback {
+  color: red; /* Change text color for invalid feedback */
+  font-size: 14px;
+}
+.new::placeholder { /* Most modern browsers support this syntax */
+  color: rgb(0, 0, 0);
+}
+
+.text-center {
+  text-align: center !important;
+      
+}

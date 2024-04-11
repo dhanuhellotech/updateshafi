@@ -1,0 +1,121 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'; // Import Axios
+import './test.css';
+
+export default function Testimonialnew() {
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    fetchReviews();
+  }, []);
+
+  const fetchReviews = () => {
+    axios.get('http://localhost:5000/review') // Make a GET request to fetch reviews
+      .then(response => {
+        if (response.status === 200) {
+          setReviews(response.data); // Update state with the fetched reviews
+        } else {
+          throw new Error('Failed to fetch reviews');
+        }
+      })
+      .catch(error => console.error('Error fetching reviews:', error));
+  };
+
+  return (
+    <div className='container'>
+      <h1>Our Happy Clients </h1>
+      <div className='testimonial-container'>
+        {reviews.map((review, index) => (
+          <section key={index} className="testimonials">
+            <h2>What Our Fans Are Saying</h2>
+            <div className="testimonial-item">
+              <img src={review.image} alt="Client" className="testimonial-img" />
+              <h3 className="testimonial-title">&#8220;{review.content}&#8221;</h3>
+              <p className="testimonial-content">{review.description}</p>
+              {/* Assuming you have a field for rating in reviews */}
+              <div className="testimonial-rating">
+                {[...Array(review.stars)].map((_, i) => (
+                  <i key={i} className="fas fa-star text-secondary"></i>
+                ))}
+              </div>
+              <p className="testimonial-author">{review.name} - {review.place}</p>
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  );
+}
+import React from 'react';
+import './test.css';
+
+export default function Testimonialnew() {
+  return (
+    <div className='container'>
+        <h1>Our Happy Clients </h1>
+    <div className='testimonial-container'> {/* Updated class name */}
+      <section className="testimonials">
+        <h2>What Our Fans Are Saying</h2>
+        <div className="testimonial-item"> {/* Updated class name */}
+          <img src="assets/img/testimonial-img.jpg" alt="Client" className="testimonial-img" />
+          <h3 className="testimonial-title">&#8220;These treats are real tail-waggers&#8221;</h3>
+          <p className="testimonial-content"> My pug Sir Biscuit is obsessed with the Salmon Snackers! He does a little dance when he hears the Barkin' Baxter's truck coming. - Lily R.</p>
+          <div className="testimonial-rating">
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+          </div>
+          <p className="testimonial-author">Lily R. - New York, USA</p>
+        </div>
+        {/* Repeat the above structure for other testimonials */}
+      </section>
+
+      
+    </div>
+    <div className='testimonial-container'> {/* Updated class name */}
+      <section className="testimonials">
+        <h2>What Our Fans Are Saying</h2>
+        <div className="testimonial-item"> {/* Updated class name */}
+          <img src="assets/img/testimonial-img.jpg" alt="Client" className="testimonial-img" />
+          <h3 className="testimonial-title">&#8220;These treats are real tail-waggers&#8221;</h3>
+          <p className="testimonial-content"> My pug Sir Biscuit is obsessed with the Salmon Snackers! He does a little dance when he hears the Barkin' Baxter's truck coming. - Lily R.</p>
+          <div className="testimonial-rating">
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+          </div>
+          <p className="testimonial-author">Lily R. - New York, USA</p>
+        </div>
+        {/* Repeat the above structure for other testimonials */}
+      </section>
+
+      
+    </div>
+    <div className='testimonial-container'> {/* Updated class name */}
+      <section className="testimonials">
+        <h2>What Our Fans Are Saying</h2>
+        <div className="testimonial-item"> {/* Updated class name */}
+          <img src="assets/img/testimonial-img.jpg" alt="Client" className="testimonial-img" />
+          <h3 className="testimonial-title">&#8220;These treats are real tail-waggers&#8221;</h3>
+          <p className="testimonial-content"> My pug Sir Biscuit is obsessed with the Salmon Snackers! He does a little dance when he hears the Barkin' Baxter's truck coming. - Lily R.</p>
+          <div className="testimonial-rating">
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-secondary"></i>
+          </div>
+          <p className="testimonial-author">Lily R. - New York, USA</p>
+        </div>
+        {/* Repeat the above structure for other testimonials */}
+      </section>
+
+      
+    </div>
+    </div>
+  );
+}

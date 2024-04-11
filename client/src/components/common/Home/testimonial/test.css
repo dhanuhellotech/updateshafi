@@ -1,0 +1,186 @@
+.testimonial-container {
+  background: var(--color-red);
+  background: linear-gradient(215deg, rgb(197, 80, 172) 0%, rgb(81, 205, 219) 35%, rgb(94, 206, 210) 70%);
+  background-size: 200% 200%;
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  flex-direction: row;
+  display:inline-block;
+  position: relative;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  animation: spin 12s infinite 0.2s ease-in-out, shade 12s infinite 0.2s ease-in-out;
+}
+.testimonial-content{
+
+}
+.testimonial-title{
+color: #000000;
+font-size:large;
+align-items: center;
+
+}
+.testimonial-img {
+display: block;
+margin: 0 auto; /* This centers the image horizontally */
+}
+
+.testimonial-container:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.testimonial-container:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.testimonial-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -22px;
+  right: 0;
+  background: var(--color-red);
+  background: linear-gradient(215deg,#15B9D9 0%, rgb(145, 64, 185) 35%, rgb(56, 215, 224) 70%);
+  background-size: 200% 200%;
+  clip-path: polygon(80% 80%, 90% 100%, 90% 80%);
+  animation: shade 12s infinite 0.2s ease-in-out;
+}
+
+.testimonial-container:nth-child(2):after {
+  animation-delay: 4s;
+}
+
+.testimonial-container:nth-child(3):after {
+  animation-delay: 8s;
+}
+
+.testimonial-container:before {
+  content: "";
+  width: 300px;
+  height: 50px;
+  left: 50px;
+  top: 50px;
+  position: absolute;
+  background: rgb(0 0 0 / 0.2);
+  transform: translateY(200px) translateZ(-50px) rotateX(90deg);
+  filter: blur(20px);
+}
+
+/* Rest of your styles for testimonials */
+
+@keyframes spinnew {
+  0% {
+    transform: rotateY(90deg) rotateX(0deg);
+   display: block;
+   opacity: 1;
+  };
+  5% {
+    transform: rotateY(38deg) rotateX(8deg);
+      
+  }
+  95% {
+    transform: rotateY(-30deg) rotateX(-2deg); 
+  }
+  100% {
+    transform: rotateY(-90deg) rotateX(0deg);
+   display: block;
+   opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0%,
+
+  100% {
+    transform: rotateY(-30deg) rotateX(-2deg);   
+  }
+  50% {
+    transform: rotateY(38deg) rotateX(8deg);
+  }
+}
+
+@keyframes shade {
+  0%,
+  100% {
+    background-position: 0% 100%
+  }
+  50% {
+    background-position: 100% 0%
+  }
+}
+@keyframes showhide {
+  
+  0% {
+    display: block;
+  }
+  33.3333% {
+    display: block;
+  }
+  33.3334% {
+    display: none;
+  }
+  100% {
+    display: none;
+  }
+}  
+@media (max-width: 400px) {
+  .testimonial-container {
+    width: 100%; /* Set width to 100% for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+/* Define styles for the button */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Define styles for the plant-based button text */
+.button-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* You can adjust the color as needed */
+}
+
+/* Define styles for the container of icons */
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Define styles for each individual icon */
+.icon {
+  margin-right: 10px; /* Adjust the spacing between icons */
+}
+
+/* Define styles for the SVG icons */
+.icon svg {
+  width: 40px; /* Adjust the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Define styles for the specific SVG icons */
+.icon-1 svg {
+  fill: #5EBF62; /* Adjust the color of the first icon */
+}
+
+.icon-2 svg {
+  fill: #4CAF50; /* Adjust the color of the second icon */
+}
+
+.icon-3 svg {
+  fill: #3F8E49; /* Adjust the color of the third icon */
+}
+
+.icon-4 svg {
+  fill: #3C7842; /* Adjust the color of the fourth icon */
+}
+
+.icon-5 svg {
+  fill: #35673B; /* Adjust the color of the fifth icon */
+}

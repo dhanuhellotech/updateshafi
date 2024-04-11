@@ -1,0 +1,71 @@
+/* GlassContainer.css */
+.container-glass,
+.container-glass::before,
+.container-glass::after {
+  border-radius: 7px;
+  background-color: rgba(150, 27, 216, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.08);
+}
+.container-glass {
+  position: relative;
+  padding: 2rem 1.5rem;
+  width: 90%;
+  max-width: 480px;
+  margin: 10%;
+}
+.container-glass::before,
+.container-glass::after {
+  content: '';
+  position: absolute;
+}
+.container-glass::before {
+  height: 80px;
+  width: 80px;
+  top: -10px;
+  left: -40px;
+  z-index: -1;
+}
+.container-glass::after {
+  height: 40px;
+  width: 40px;
+  bottom: 20px;
+  right: -10px;
+  z-index: 2;
+}
+
+.container-glass .img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.container-glass .text {
+  font-size: 1.01rem;
+  color: #000000;
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.container-glass .btn {
+  display: block;
+  margin: auto;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.02rem;
+  width: 80%;
+  max-width: 200px;
+  padding: .6rem 1rem;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  /* background-color: rgb(243, 170, 250); */
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.container-glass .btn:hover {
+  background-color:#d0c978;
+  color: #333;
+}
+.card-text{
+    color: #000000;
+}

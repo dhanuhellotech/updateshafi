@@ -1,0 +1,312 @@
+
+
+.footer {
+    background: linear-gradient( rgba(27, 26, 26, 0.9),rgba(255, 279, 145, 0.5)), url('../../../assets/caro/carosuel-3.jpg');
+    background-size: cover;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+.first {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+    .first h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #ffffff;
+        padding-bottom: 0.5em;
+    }
+
+        .first h4::after {
+            content: '';
+            background: #66c83d;
+            width: 20%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+        }
+
+    .first p {
+        font-size: 14px;
+    }
+    .first li {
+        list-style: none;
+        padding-bottom: 10px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+
+    .link-color {
+        color:aliceblue;
+      }
+      
+.second {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.second2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.second h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #fff;
+    padding-bottom: 0.5em;
+}
+
+    .second h4::after {
+        content: '';
+        background: #66c83d;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+
+
+.second li {
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.second a, .second2 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+    .second a:hover, .second2 a:hover {
+        color: #ffffff;
+        transition: 0.2s;
+        text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        text-decoration: none
+
+    }
+
+
+.youtube a{
+    color: white;
+}
+.third {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+    .third h4 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        color: #fff;
+        padding-bottom: 0.5em;
+    }
+
+
+        .third h4::after {
+            content: '';
+            background: #66c83d;
+            width: 30%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+
+        }
+
+
+
+    .third li {
+        list-style: none;
+        padding-bottom: 15px;
+    }
+
+
+    .third p {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        letter-spacing: 3px;
+     
+        font-size: 18px;
+        transition: 0.2s;
+    }
+
+
+        .third a:hover {
+            color: #fff;
+            transition: 0.2s;
+            text-shadow: 1px 1px 20px rgba(0,0,0,1);
+        }
+
+
+@media screen and (max-width:1000px) {
+    .first {
+        text-align: center;
+    }
+
+        .first h4::after {
+            left: 40%;
+        }
+}
+
+@media screen and (max-width:1000px) {
+    .third {
+        text-align: center;
+    }
+
+        .third h4::after {
+            left: 40% !important;
+        }
+}
+@media (max-width: 400px) {
+    .second li a i {
+      display: none;
+
+    }
+    .second li  a{
+        /* text-align: right; */
+    }
+  }
+  @media (max-width: 375px) {
+ 
+    .second li  a i{
+        text-align: right;
+  
+    }
+  }
+@media screen and (max-width:500px) {
+    .third {
+        text-align: center;
+    }
+
+        .third h4::after {
+            left: 40% !important;
+        }
+        .third p{
+            font-size: 14px;
+        }
+}
+.margin {
+    margin-left: 20px;
+}
+
+.line {
+    height:2px;
+    background-color:rgb(255, 255, 255);
+    width:100%;
+}
+
+.container h1{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+@media screen and (max-width:500px) {
+    .first, .second, .third {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .second li a i {
+        display: none;
+    }
+
+    .second li a {
+        text-align: right;
+    }
+
+    .line {
+        height: 1px;
+        margin-bottom: 10px;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+    
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 5px;
+    }
+
+    .youtube {
+        margin-top: 10px;
+    }
+
+    .line {
+        margin-bottom: 15px;
+    }
+}   

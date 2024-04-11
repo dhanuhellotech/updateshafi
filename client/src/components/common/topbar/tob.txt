@@ -1,0 +1,30 @@
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+
+export default function Topbar() {
+  return (
+    <div>
+        {/* Topbar Start */}
+  <div className="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div className="row gx-0 align-items-center" style={{height: 45}}>
+      <div className="col-lg-8 text-center text-lg-start mb-lg-0">
+        <div className="d-flex flex-wrap">
+          <Link to="https://www.google.com/maps/dir//floor+1st,+470+2nd,+Karumbalai+Main+Rd,+KK+Nagar,+Tamil+Nadu+625020/@9.9336346,78.059965,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b00c546839cf707:0xc1213d8cef09a807!2m2!1d78.1423669!2d9.9336447?entry=ttu" className="text-light me-4"><i className="fas fa-map-marker-alt text-primary me-2" /> KK Nagar, Madurai</Link>
+          <Link to="tel:+01234567890" className="text-light me-4"><i className="fas fa-phone-alt text-primary me-2" />+91-9843542042</Link>
+          <Link to="mailto:Shafichannel123@gmail.com" className="text-light me-0"><i className="fas fa-envelope text-primary me-2" />Shafichannel123@gmail.com</Link>
+        </div>
+      </div>
+      <div className="col-lg-4 text-center text-lg-end">
+        <div className="d-flex align-items-center justify-content-end">
+          {/* <Link to="#" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-facebook-f" /></Link> */}
+          {/* <Link to="#" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-twitter" /></Link> */}
+          <Link to="https://youtube.com/shorts/QnLPtqOEBwI?si=0QS5QBD1jGgLVvQc" className="btn btn-light btn-square border rounded-circle nav-fill me-3"><i className="fab fa-youtube" /></Link>
+          {/* <Link to="#" className="btn btn-light btn-square border rounded-circle nav-fill me-0"><i className="fab fa-linkedin-in" /></Link> */}
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Topbar End */}
+    </div>
+  );
+}

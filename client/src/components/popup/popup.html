@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary " id="popppp" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+    Launch static backdrop modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../../assets/caro/caro1.jpg" style="width: 100%;height: 100p;">
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </div>
+             
+            </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<!-- <div>
+    <div className="modal fade"  show={showPopup} onHide={togglePopup}>
+         <Modal.Header closeButton>
+           <Modal.Title>Popup</Modal.Title>
+         </Modal.Header>
+       
+         <Modal.Body>
+           <div className="row">
+             <div className="col-md-6">
+               <img src={imageUrl} style={{ width: '100%', height: 'auto' }} alt="Image" />
+             </div>
+             <div className="col-md-6">
+               <form onSubmit={handleSubmit}>
+                 <div className="mb-3">
+                   <input
+                     type="text"
+                     className={`form-control new ${formErrors.name && 'is-invalid'}`}
+                     name="name"
+                     value={formData.name}
+                     placeholder="Name"
+                     onChange={handleChange}
+                   />
+                   {formErrors.name && <div className="invalid-feedback">{formErrors.name}</div>}
+                 </div>
+                 <div className="mb-3">
+                   <input
+                     type="email"
+                     className={`form-control new ${formErrors.email && 'is-invalid'}`}
+                     name="email"
+                     value={formData.email}
+                     placeholder="Email"
+                     onChange={handleChange}
+                   />
+                   {formErrors.email && <div className="invalid-feedback">{formErrors.email}</div>}
+                 </div>
+                 <div className="mb-3">
+                   <input
+                     type="tel"
+                     className={`form-control new ${formErrors.phone && 'is-invalid'}`}
+                     name="phone"
+                     value={formData.phone}
+                     placeholder="Phone"
+                     onChange={handleChange}
+                   />
+                   {formErrors.phone && <div className="invalid-feedback">{formErrors.phone}</div>}
+                 </div>
+                 <p className='text-dark' style={{ fontSize: '20px', fontWeight: 'bold' }}>What Kind of Services Do You need ?</p>
+                 <div className="mb-3">
+                   <select
+                     className="form-select"
+                     name="services"
+                     value={formData.services}
+                     onChange={handleChange}
+                   >
+                     <option value="">Select a Service</option>
+                     <option value="Accupunture and Ayurvedic Treatments">Accupunture and Ayurvedic Treatments</option>
+                     <option value="Ayurvedic Products">Ayurvedic Products</option>
+                     <option value="Atma Study Center">Atma Study Center</option>
+                   </select>
+                 </div>
+                 <button type="submit" className="btn btn-primary">Submit</button>
+               </form>
+             </div>
+           </div>
+         </Modal.Body>
+       </div>
+       
+     </div> -->
